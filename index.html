@@ -63,6 +63,14 @@
   .hero-img img{border-radius:18px;box-shadow:0 25px 60px rgba(0,0,0,.35);aspect-ratio:4/5;object-fit:cover}
   @media(max-width:860px){.hero-inner{grid-template-columns:1fr;padding:70px 0 90px}.hero h1{font-size:2.4rem}.hero-img{display:none}}
 
+  @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+  .hero h1{animation:fadeUp .8s ease .1s both}
+  .hero .hero-tagline{animation:fadeUp .8s ease .25s both}
+  .hero-inner>div>p:not(.hero-tagline){animation:fadeUp .8s ease .4s both}
+  .hero-cta{animation:fadeUp .8s ease .55s both}
+  .hero-badges{animation:fadeUp .8s ease .7s both}
+  .hero-img{animation:fadeUp 1s ease .2s both}
+
   /* Services */
   .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:46px}
   .card{background:#fff;border-radius:16px;padding:30px 26px;box-shadow:var(--shadow);border:1px solid rgba(14,124,123,.06);transition:transform .25s,box-shadow .25s}
